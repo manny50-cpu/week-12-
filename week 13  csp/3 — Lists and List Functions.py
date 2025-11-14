@@ -1,24 +1,67 @@
 # Objective:
 # Students will understand how to create, modify, and access elements in Python lists.
-
+# append= add to list at the end of a list
+# extend adds mutliple things to a list
+# len = how long the thing is 
+# type= identifies the class of thing
+# extend= adds more than one thing to a list
+# pop= removes something from a list and returns it at a given index
+# pop() for last item
+# reverse= reverses the order of things in a list
 # Topics Covered:
 # Creating lists, indexing, slicing, appending, popping, sorting, reversing.
-
+#lists are part of the collectios family in python
+# creating a list
 # Examples:
-
-my_list = ['apple', 'banana', 'cherry']
-print(my_list[0])         # apple
-print(my_list[1:])        # ['banana', 'cherry']
-
-my_list.append('grape')
+my_list= [1,2,3,4,5]
 print(my_list)
+print(len(my_list))
+print(type(my_list))
+print(my_list[0])
+print(my_list[1:4])
+print(my_list[1:])
+print(my_list[:-1])
+print(my_list [::-1])
 
-my_list.pop(1)
+my_list.append(6)
+print(my_list) #adds to my list
+my_list.extend([7,8])
 print(my_list)
+my_list.extend({8,9,10,11})
+print(my_list)
+my_list.pop()
+print(my_list)
+my_list.pop(2)
+print(my_list)
+my_list.reverse()
+print(my_list)
+my_list.remove(4)
 
-numbers = [3, 1, 4, 2]
-numbers.sort()
-print(numbers)
+new_list =list(range(12,120))
+print(new_list)
+my_list.extend(new_list)
+print(my_list)
+new1_list = list(range(120,620))
+new_list.extend(new1_list)
+print(new1_list[: : 3])
+print(new1_list[::4])
+del new1_list[: : 3]
+print(new1_list)
+
+# my_list = ['apple'
+# , 'banana', 'cherry']
+# print(my_list[0])         # apple
+# print(my_list[1:])        # ['banana', 'cherry']
+
+# my_list.append('grape')
+# print(my_list)
+
+# my_list.pop(1)
+# print(my_list)
+
+# numbers = [3, 1, 4, 2]
+# numbers.sort()
+# print(numbers)
 
 
 # Practice Problems:
